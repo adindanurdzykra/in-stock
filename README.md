@@ -82,7 +82,7 @@ Pertama-tama, saya membuat kerangka views dengan membuat folder templates pada d
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Shopping List Page</h1>
+    <h1>In Stock Page</h1>
 
     <h5>Name:</h5>
     <p>{{name}}</p>
@@ -170,8 +170,19 @@ Lalu pada main.html, saya tambahkan kode dibawah
 Kemudian saya melakukan migrasi model terlebih dahulu agar perubahan yang saya buat terlacak dengan menjalankan perintah `python3 manage.py makemigrations` dan `python3 manage.py migrate`
 
 -> Tambahkan 5 fungsi views untuk melihat objek yang sudah ditambahkan dalam format HTML, XML, JSON, XML by ID, dan JSON by ID.
-Pada berkas views.py di direktori main, tambahkan import HttpResponse dan Serializer. Lalu saya buat 4 fungsi baru dibawah create_product
+Pada berkas views.py di direktori main, tambahkan import HttpResponse dan Serializer. Lalu saya buat 4 fungsi baru dibawah dan show_main untuk html nya
 ```python
+def show_main(request):
+    products = Product.objects.all()
+
+    context = {
+        'name': 'Adinda Nurdzykra', # Nama kamu
+        'class': 'PBP E', # Kelas PBP kamu
+        'products': products
+    }
+
+    return render(request, "main.html", context)
+
 def show_xml(request):
     data = Item.objects.all()
     return HttpResponse(serializers.serialize("xml", data), content_type="application/xml")
