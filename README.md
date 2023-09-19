@@ -195,8 +195,8 @@ urlpatterns = [
     path('json/<int:id>/', show_json_by_id, name='show_json_by_id'), 
 ]
 ```
-1[HTML](/Users/adindanurdzykra/Documents/in_stock/image/HTML.png)
-![XML in POSTMAN](/Users/adindanurdzykra/Documents/in_stock/image/XML.png)
-![JSON in POSTMAN](/Users/adindanurdzykra/Documents/in_stock/image/JSON.png)
-![XML_by_id in POSTMAN](/Users/adindanurdzykra/Documents/in_stock/image/XML_by_id.png)
-![JSON_by_id in POSTMAN](/Users/adindanurdzykra/Documents/in_stock/image/JSON_by_id.png)
+1[HTML](https://drive.google.com/file/d/1oYoUMFX6X_q1XaIGpw6u3pEF7kl0_CEB/view?usp=drive_link)
+![XML in POSTMAN](https://drive.google.com/file/d/1NI5Lc5dF6gtR-a7QJbU7KL8e7Y4d8p0k/view?usp=drive_link)
+![JSON in POSTMAN](https://drive.google.com/file/d/1DtvqABx91wxw4UWgYZYQ5_JW0RuV0tEO/view?usp=drive_link)
+![XML_by_id in POSTMAN](https://drive.google.com/file/d/17S8QBFJM7GklAWVDMu-b9DMqCayDvEPw/view?usp=drive_link)
+![JSON_by_id in POSTMAN](https://drive.google.com/file/d/1kWxGZ1xn9nzSfREeBZzfmVLfyex0JbnT/view?usp=drive_link)
