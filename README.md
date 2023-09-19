@@ -3,11 +3,17 @@
 **1. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).**
 
 Pertama-tama saya membuat repositori github baru dengan nama in-stock. kemudian, saya membuat folder in_stock dan menginisiasinya sebagai repositori git dengan perintah 
+
 `git init`
+
 `git config user.name "adindanurdzykra"`
+
 `git config user.email "adinda.nurdzykra@gmail.com"`
+
 `git config --global user.name "adindanurdzykra"`
+
 `git config --global user.email "adinda.nurdzykra@gmail.com"`
+
 kemudian, saya membuat file README.md lalu melakukan `add`, `commit`, dan `push`
 
 setelah itu, saya membuat virtual environment dengan perintah `python3 -m venv env` dan mengaktifkannya dengan `source env/bin/activate`. Untuk memulai membuat projek baru Django, saya membuat file requirements.txt kemudian menjalankan `pip3 install -r requirements.txt`, barulah perintah membuat projek Django `django-admin startproject in_stock .`
@@ -66,6 +72,7 @@ Biasanya pengiriman data berbasis HTML digunakan dalam konteks form yang dibuka 
 - Proses pertukaran data lebih efisien karena JSON merangkumnya dengan lebih terstruktur dan sederhana sehingga server dapat langsung menampilkan data tersebut
 - Menyederhanakan proses penerjemahan data agar mudah dipahami oleh manusia
 - JSON didukung oleh hampir seluruh peramban web dan platform yang ada
+  
 source: https://midtrans.com/id/blog/json-format
 
 **4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).**
