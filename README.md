@@ -195,8 +195,26 @@ urlpatterns = [
     path('json/<int:id>/', show_json_by_id, name='show_json_by_id'), 
 ]
 ```
-1[HTML](https://drive.google.com/file/d/1oYoUMFX6X_q1XaIGpw6u3pEF7kl0_CEB/view?usp=drive_link)
-![XML in POSTMAN](https://drive.google.com/file/d/1NI5Lc5dF6gtR-a7QJbU7KL8e7Y4d8p0k/view?usp=drive_link)
-![JSON in POSTMAN](https://drive.google.com/file/d/1DtvqABx91wxw4UWgYZYQ5_JW0RuV0tEO/view?usp=drive_link)
-![XML_by_id in POSTMAN](https://drive.google.com/file/d/17S8QBFJM7GklAWVDMu-b9DMqCayDvEPw/view?usp=drive_link)
-![JSON_by_id in POSTMAN](https://drive.google.com/file/d/1kWxGZ1xn9nzSfREeBZzfmVLfyex0JbnT/view?usp=drive_link)
+HTML
+
+<img width="718" alt="HTML" src="https://github.com/adindanurdzykra/in-stock/assets/121367510/239aef04-b811-41d8-90f9-41580551f224">
+
+
+XML
+
+<img width="706" alt="XML" src="https://github.com/adindanurdzykra/in-stock/assets/121367510/4568913d-5029-4f2b-a71f-9b127696eb28">
+
+
+XML by id
+
+<img width="714" alt="XML_by_id" src="https://github.com/adindanurdzykra/in-stock/assets/121367510/78cf7023-630e-4b8b-953d-8f11cc674e77">
+
+
+JSON
+
+<img width="715" alt="JSON" src="https://github.com/adindanurdzykra/in-stock/assets/121367510/4bf06de9-36ca-4eea-a28d-f22eaf708ef6">
+
+
+JSON by id
+
+<img width="714" alt="JSON_by_id" src="https://github.com/adindanurdzykra/in-stock/assets/121367510/196bac97-40ad-4013-8ec4-d7aa1849f6ac">
