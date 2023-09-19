@@ -94,11 +94,11 @@ Pertama-tama, saya membuat kerangka views dengan membuat folder templates pada d
 Setelah itu, saya membuat berkas baru bernama forms.py pada direktori main dan menambahkan kode ini
 ```python
 from django.forms import ModelForm
-from main.models import Product
+from main.models import Item
 
 class ProductForm(ModelForm):
     class Meta:
-        model = Product
+        model = Item
         fields = ["name", "amount", "description"]
 ```
 Lalu, pada berkas views.py ada direktori main saya menambahkan import reverse dan ProductForm. Selain itu saya membuat fungsi bernama create_product yang berisi kode ini
@@ -173,7 +173,7 @@ Kemudian saya melakukan migrasi model terlebih dahulu agar perubahan yang saya b
 Pada berkas views.py di direktori main, tambahkan import HttpResponse dan Serializer. Lalu saya buat 4 fungsi baru dibawah dan show_main untuk html nya
 ```python
 def show_main(request):
-    products = Product.objects.all()
+    products = Item.objects.all()
 
     context = {
         'name': 'Adinda Nurdzykra', # Nama kamu
