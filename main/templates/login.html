@@ -6,26 +6,80 @@
 
 {% block content %}
 
+<style>
+    body {
+        background-color: #b99174; /* Change to the desired background color */
+        margin: 0; /* Remove default body margin */
+        padding: 0; /* Remove default body padding */
+    }
+    .login {
+        background-color: #f3f2dc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+        margin-bottom: 200px;
+        margin-right: 200px;
+        margin-left: 200px;
+        font-family: "Times New Roman", sans-serif;
+        font-weight: bold;
+        border: 1px solid #00000000;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        border-style: ridge;
+        line-height: 3;
+    }
+
+    .login_btn {
+        background-color: #f0d121aa; /* Change the background color */
+        color: #fff; /* Change the text color */
+        padding: 0px 20px; /* Adjust padding for button size */
+        border: none; /* Remove button border */
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 3px; /* Rounded corners */
+        text-transform: uppercase; /* Convert text to uppercase */
+    }
+
+    .form-control {
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.5;
+        display: block;
+        width: 150%;
+        padding: 5px;
+        font-size: 16px;
+        border: 1px solid #030303;
+        background-color: #ffffff;
+        border-radius: 15px;
+        margin-bottom: 8px;
+    }
+    .register-text {
+        white-space: nowrap; /* Prevent line breaks within the text */
+    }
+</style>
+
+
 <div class = "login">
 
-    <h1>Login</h1>
+    <h1 style="font-weight: bold;">Login</h1>
 
     <form method="POST" action="">
         {% csrf_token %}
         <table>
             <tr>
-                <td>Username: </td>
                 <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
             </tr>
-                    
             <tr>
-                <td>Password: </td>
                 <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
             </tr>
 
             <tr>
                 <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
+                <br />
+                <td><button type="submit" class="btn login_btn">Login</button></td>
             </tr>
         </table>
     </form>
@@ -38,7 +92,7 @@
         </ul>
     {% endif %}     
         
-    Don't have an account yet? <a href="{% url 'main:register' %}">Register Now</a>
+    <p class="register-text">Don't have an account yet? <a href="{% url 'main:register' %}">Register Now</a></p>
 
 </div>
 

@@ -453,3 +453,82 @@ def logout_user(request):
 ```
 
 
+# Tugas 5
+**1. Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya.**
+
+- Tag Selector adalah cara mengubah properti pada tiap elemen yang menggunakan tag tersebut
+```HTML
+a {
+}
+```
+- Class Selector adalah pengaturan properti yang dapat digunakan untuk mengelompokan elemen yang memiliki karakteristik sama
+```HTML
+.class {
+}
+```
+- ID Selector adalah pemanggilan kelas untuk elemen dengan atribut yang unik dalam HTML
+```HTML
+#id {
+}
+```
+- Universal Selector adalah pengubahan properti yang bersifat global dan berpengaruh pada keseluruhan halaman
+```HTML
+* {
+}
+```
+
+**2. Jelaskan HTML5 Tag yang kamu ketahui.**
+
+`<h1></h1>` untuk mendefinisikan header
+`<table></table>` untuk mendefinisikan penyusunan table
+`<!DOCTYPE>` untuk memberikan spesifikasi tipe dokumen
+`<p></p>` untuk mendefinisikan sebuah paragraf
+`<img></img>` untuk men-spesifikasikan sebuah gambar
+
+**3. Jelaskan perbedaan antara margin dan padding.**
+
+Margin mengacu pada ruang yang berada di sekitar element. Setiap sisi elemen memiliki margin untuk mengatur sedekat apa suatu elemen dengan elemen lain. 
+
+Sedangkan, padding adalah ruang yang berada di dalam elemen atau ruang antara elemen dengan konten di dalam elemen tersebut. Padding digunakan untuk mengatur seberapa dekat atau jauh suatu konten dengan border dari elemen tempat ia berada. 
+
+**4. Jelaskan perbedaan antara framework CSS Tailwind dan Bootstrap. Kapan sebaiknya kita menggunakan Bootstrap daripada Tailwind, dan sebaliknya?**
+
+Tailwind mengedepankan pendekatan "utility-first" yakni penyusunan tampilan dilakukan dengan menggabungkan class utility yang lebih kecil. Hal ini memungkinkan untuk memberikan fleksilitas yang lebih besar untuk mengatur tampilan sehingga cocok untuk pengembang web yang ingin membuat tampilan web yang unik. Tailwind memiliki ukuran file yang lebih ringan. 
+
+Bootstrap memberikan set class CSS dengan tampilan yang terstruktur melalui kerangka kerjanya sehingga dapat digunakan untuk pengembang web yang mementingkan kestabilan dan kemudahan untuk digunakan namun tetap memiliki fleksibilitas dalam mendesain tampilannya. BootStrap memiliki ukuran file yang lebih besar karena telah menyediakan banyak fitur dan komponen yang dapat langsung digunakan oleh pengembang web.  
+**5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).**
+
+
+-> Kustomisasi halaman login, register, dan tambah inventori semenarik mungkin.
+
+Untuk memberikan desain yang konsisten, saya membuat class dalam tag style yang berisi template desain yang ingin saya gunakan. Seperti yang ada dibawah ini
+```HTML
+.template {
+    background-color: #f3f2dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-right: 200px;
+    margin-left: 200px;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: bold;
+    border: 1px solid #00000000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-style: ridge;
+    line-height: 3;
+}
+```
+
+-> Kustomisasi halaman daftar inventori menjadi lebih berwarna maupun menggunakan apporach lain seperti menggunakan Card.
+
+
+Saya menggunakan class card untuk menyusun dan menampilkan informasi tiap item. Kemudian agar tiap card tidak terlalu berdekatan satu sama lain, saya menyusunnya menggunakan class col-md-4 mb-3 yang akan men-spesifikasi bahwa elemen card akan menggunakan 4 grid colom bootstrap serta memberikan margin bawah untuk menjaga jarak dengan cards dibawahnya.
+
+
+

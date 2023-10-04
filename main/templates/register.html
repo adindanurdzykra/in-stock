@@ -5,10 +5,51 @@
 {% endblock meta %}
 
 {% block content %}  
+<style>
+    body {
+        background-color: #b99174; /* Change to the desired background color */
+        margin: 0; /* Remove default body margin */
+        padding: 0; /* Remove default body padding */
+    }
+    .regis {
+        background-color: #f3f2dc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+        margin-bottom: 200px;
+        margin-right: 200px;
+        margin-left: 200px;
+        font-family: "Times New Roman", sans-serif;
+        font-weight: bold;
+        border: 1px solid #00000000;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        border-style: ridge;
+    }
+    .daftar_btn {
+        background-color: #f0d121aa; /* Change the background color */
+        color: #fff; /* Change the text color */
+        padding: 0px 20px; /* Adjust padding for button size */
+        border: none; /* Remove button border */
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 3px; /* Rounded corners */
+        text-transform: uppercase; /* Convert text to uppercase */
+    }
+    .last-row {
+        color: rgb(236, 29, 191); /* Warna teks jika diperlukan */
+    }
 
-<div class = "login">
+</style>
+
+<div class = "regis">
     
-    <h1>Register</h1>  
+    <h1 style="font-weight: bold;">Welcome to In Stock!</h1>  
+    <h3 style="font-weight: bold;">Regist Here</h3> 
 
         <form method="POST" >  
             {% csrf_token %}  
@@ -16,7 +57,9 @@
                 {{ form.as_table }}  
                 <tr>  
                     <td></td>
-                    <td><input type="submit" name="submit" value="Daftar"/></td>  
+                    <br />
+                    <td><input type="submit" name="submit" value="Daftar" style="width: 50%; font-family: 'Open Sans', sans-serif;
+                        " class="btn btn-light btn-block daftar_btn"/></td>  
                 </tr>  
             </table>  
         </form>
