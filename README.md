@@ -241,8 +241,10 @@ JSON by id
 # Tugas 4
 **1. Apa itu Django UserCreationForm, dan jelaskan apa kelebihan dan kekurangannya?**
 Djago UserCreationForm merupakan modul yang dapat digunakan untuk membuat pengguna yang bisa mengakses sebuah aplikasi web. Django UserCreationForm memiliki tiga field, yakni: username, password1, dan password2. Dua field password dibutuhkan untuk mengonfirmasi isi password. 
+
 kelebihan:
 + penggunaan Django UserCreationForm memberikan programmer kemudahan serta menghemat waktu karena Django UserCreationForm telah memiliki sistem validasi bawaan.
+
 kekurangan:
 - Namun, field yang dapat digunakan terbatas (hanya 3) sehingga programmer harus bisa membuat/mengubah kode untuk dapat menambahkan field baru
 
@@ -413,6 +415,12 @@ path('logout/', logout_user, name='logout'),
 Kemudian agar akses halaman main hanya untuk user yang telah ter-autentikasi, saya buat restriksi akses. Buka views.py di direktori main dan tambahkan import `from django.contrib.auth.decorators import login_required` dan tambahkan kode `@login_required(login_url='/login')` sebelum fungsi show_main
 
 -> Membuat dua akun pengguna dengan masing-masing tiga dummy data menggunakan model yang telah dibuat pada aplikasi sebelumnya untuk setiap akun di lokal.
+
+<img width="1378" alt="Screenshot 2023-09-27 at 08 04 42" src="https://github.com/adindanurdzykra/in-stock/assets/121367510/b06a1c05-1d3f-4047-9907-fac0692e3529">
+
+<img width="1367" alt="Screenshot 2023-09-27 at 07 59 39" src="https://github.com/adindanurdzykra/in-stock/assets/121367510/2e1cd889-f494-4ed4-af1b-5622299bbc5c">
+
+
 
 -> Menghubungkan model Item dengan User
 Pertama, buka file models.py yang ada di direktori main dan tambahkan import `from django.contrib.auth.models import User`. Selanjutnya tambahkan `user = models.ForeignKey(User, on_delete=models.CASCADE)` di dalam fungsi Item untuk menghubungan item pada satu user. Lalu, buka file views.py pada direktori yang sama dan ubah kode menjadi
