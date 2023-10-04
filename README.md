@@ -488,9 +488,13 @@ a {
 **2. Jelaskan HTML5 Tag yang kamu ketahui.**
 
 `<h1></h1>` untuk mendefinisikan header
+
 `<table></table>` untuk mendefinisikan penyusunan table
+
 `<!DOCTYPE>` untuk memberikan spesifikasi tipe dokumen
+
 `<p></p>` untuk mendefinisikan sebuah paragraf
+
 `<img></img>` untuk men-spesifikasikan sebuah gambar
 
 **3. Jelaskan perbedaan antara margin dan padding.**
