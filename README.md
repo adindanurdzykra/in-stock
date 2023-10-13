@@ -543,4 +543,34 @@ Untuk memberikan desain yang konsisten, saya membuat class dalam tag style yang 
 Saya menggunakan class card untuk menyusun dan menampilkan informasi tiap item. Kemudian agar tiap card tidak terlalu berdekatan satu sama lain, saya menyusunnya menggunakan class col-md-4 mb-3 yang akan men-spesifikasi bahwa elemen card akan menggunakan 4 grid colom bootstrap serta memberikan margin bawah untuk menjaga jarak dengan cards dibawahnya.
 
 
+# Tugas 6
 
+**1. Jelaskan perbedaan antara asynchronous programming dengan synchronous programming.**
+
+Asynchronous Programming adalah sebuah pendekatan dalam pemrogramman yang tidak terikat dengan protokol input dan output sehingga pengeksekusian kode tidak terpaut baris per baris. Kunci utama pada Asynchronous Programming adalah ketidakterikatan satu proses dengan proses lain. Hal ini menyebabkan proses pengeksekusian program dapat berjalan dengan lebih cepat karena tidak perlu menunggu proses dari task lain.
+
+Sebaliknya, Synchronous Programming adalah pendekatan dalam pemrograman yang menggunakan antrean dalam proses eksekusi programnya. Pada Synchronous Programming, waktu eksekusi akan cenderung lebih lama dibandingkan dengan Asynchronous Programming karena program harus menunggu task selesai untuk lanjut ke task selanjutnya. 
+
+**2. Dalam penerapan JavaScript dan AJAX, terdapat penerapan paradigma event-driven programming. Jelaskan maksud dari paradigma tersebut dan sebutkan salah satu contoh penerapannya pada tugas ini.**
+
+Event-driven Programming adalah suatu paradigma programming yang akan menjalankan suatu task berdasarkan event tertentu. Pada Event-driven Programming, program akan melakukan suatu task apabila mendapatkan suatu event tertentu, seperti input, button, dan lain-lain. Oleh karena itu, Event-driven Programming adalah program yang memiliki input, proses, dan output. 
+
+Pada tugas ini, penerapan Event-driven Programming salah satunya ada pada halaman login, setelah kita memasukkan username dan password dan menekan tombol login, program akan membaca username dan password yang kita masukkan dan melakukan autentikasi berdasarkan daftar pengguna yang telah mendaftar. Output yang dihasilkan berupa pengguna masuk atau gagal masuk. 
+
+**3. Jelaskan penerapan asynchronous programming pada AJAX.**
+
+Penerapan Asynchronous Programming pada AJAX digunakan saat terjadi proses masukan lalu akan terjadi proses pertukaran informasi di belakang. Hal ini yang menyebabkan web akan terbarui tanpa harus me-refresh keseluruhan halaman. Berikut merupakan cara kerja AJAX:
+- Browser akan memanggil AJAX untuk mengaktifkan HttpRequest dan mengirimkan HTTP request ke server
+- kemudian, HttpRequest akan dibuat untuk melakukan pertukaran data di server secara asynchronous
+- setelah menerima informasi, server akan memprosesnya lalu mengirimkan kembali hasil proses yang telah dilakukan
+- Browser akan menerima dan langsung menampilkannya di laman web
+
+**4. Pada PBP kali ini, penerapan AJAX dilakukan dengan menggunakan Fetch API daripada library jQuery. Bandingkanlah kedua teknologi tersebut dan tuliskan pendapat kamu teknologi manakah yang lebih baik untuk digunakan.**
+
+Fetch API adalah proses request layanan ke endpoint atau letak url yang akan menerima request. Fetch API akan mengambil response yang berupa data berformat json atau teks. Meskipun demikian, Fetch API tidak kompatable dengan beberapa browser yang sudah lama.
+
+Sedangkan, AJAX jQuery adalah library yang menyederhanakan proses request AJAX. Namun, ukuran data jQuery lebih besar daripada Fetch API sehingga akan membutuhkan waktu yang lebih lama untuk memuat laman web
+
+Dalam pemilihan penggunaan kedua teknologi tersebut, kita perlu mempertimbangkan kebutuhan program. Untuk mendapatkan performa web yang lebih cepat, kostumisasi yang lebih beragam, ukuran program yang lebih ringan, maka lebih baik menggunakan Fetch API. Untuk programmer yang ingin menguramakan kemudahan dan kenyamanan, maka lebih baik menggunakan jQuery yang memiliki sintax yang lebih simple. 
+
+**5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).**
