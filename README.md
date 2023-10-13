@@ -574,3 +574,7 @@ Sedangkan, AJAX jQuery adalah library yang menyederhanakan proses request AJAX. 
 Dalam pemilihan penggunaan kedua teknologi tersebut, kita perlu mempertimbangkan kebutuhan program. Untuk mendapatkan performa web yang lebih cepat, kostumisasi yang lebih beragam, ukuran program yang lebih ringan, maka lebih baik menggunakan Fetch API. Untuk programmer yang ingin menguramakan kemudahan dan kenyamanan, maka lebih baik menggunakan jQuery yang memiliki sintax yang lebih simple. 
 
 **5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).**
+1. saya membuat 2 fungsi baru `add_product_ajax` dan `get_product_json` pada views.py di direktori main
+2. saya melakukan routing dengan mengimport kedua fungsi tersebut dan menambahkannya dalam urlpattern
+3. saya menyesuaikan kode pada main.html untuk dapat memasukkan data item ke card dari ajax
+4. kemudian saya melakukan perintah collectstatic lalu mendeploy aplikasi
